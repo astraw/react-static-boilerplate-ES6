@@ -13,3 +13,6 @@ aws s3api put-object --bucket ${BUCKET} --key bundle.js --body bundle.js --conte
 
 # /about
 aws s3api put-object --bucket ${BUCKET} --key about --body about/index.html --content-type text/html --acl public-read
+
+# /about/deeper
+aws s3api put-object --bucket ${BUCKET} --key about/deeper --body about/deeper/index.html --content-type text/html --acl public-read
